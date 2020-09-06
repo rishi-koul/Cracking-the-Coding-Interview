@@ -43,3 +43,4 @@ def string_compression(string):
 print(string_compression("aabcccccaaa"))
   
 
+

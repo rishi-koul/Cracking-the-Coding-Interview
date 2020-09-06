@@ -6,7 +6,7 @@ def is_permutation_of_palindrome(sentence):
   # iterate over the sentence
   for letter in sentence:
     # add all letters in sentence along with their count in my_dict
-    if letter not in my_dict:
+    if letter not in my_dict.keys():
       my_dict[letter] = 0
     my_dict[letter] += 1
 

@@ -89,7 +89,6 @@ class linkedList{
 
   // ------------------------------------------------------
   // Actual Work
-  // Given: You do not have access to the head pointer
 
   void partition(int value){
     // Iterate over the list

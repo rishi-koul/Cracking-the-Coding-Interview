@@ -1,1 +1,3 @@
-Still working on ques 4.7 and 4.9
+Question TO-DO:
+* 4.7
+* 4.9

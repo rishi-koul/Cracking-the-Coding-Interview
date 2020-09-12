@@ -19,14 +19,14 @@ class Tree{
 
   Tree *insert(Tree *root, int value);
     
-  //  Helper func to find height of a of the node
+  //  Helper func to find parent of a node
   Tree* findParent(Tree *root, Tree *node);
 
   // find depth of a node
   int getDepth(Tree *node);
 
   // find the common ancestor of two nodes
-  Tree *commonAncestot(Tree *node, Tree*node2);
+  Tree *commonAncestor(Tree *node, Tree*node2);
 
 };
 
@@ -109,7 +109,7 @@ int Tree::getDepth(Tree *node){
   return height;
 }
 
-Tree *Tree::commonAncestot(Tree *node1, Tree*node2){
+Tree *Tree::commonAncestor(Tree *node1, Tree*node2){
   int diff = getDepth(node1) - getDepth(node2);
 
   Tree* higherNode = (diff > 0) ? node2 : node1;
@@ -171,7 +171,7 @@ int main() {
     tree.preOrder(root);
     cout<<endl;
 
-    int i = tree.commonAncestot(root->left->left->right, root->right->right->left)->data;
+    int i = tree.commonAncestor(root->left->left->right, root->right->right->left)->data;
     cout<<"Common ancestor is: "<<i<<endl;
     
 }
